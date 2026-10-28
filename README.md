@@ -1,4 +1,4 @@
-# 🚀 Django Tutorial - Learn Django from Scratch
+# 🚀 Django Tutorial - Learn Django from Scratc
 
 <div align="center">
 
