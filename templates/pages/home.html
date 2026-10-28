@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 60px;
+            margin: 0;
+        }
+        h1 { color: #38bdf8; }
+        p { font-size: 18px; }
+        ul { list-style: none; padding: 0; }
+        li {
+            background: #1e293b;
+            margin: 8px auto;
+            padding: 12px;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <p>{{ message }}</p>
+
+    <h2>مهارت‌هایی که یاد می‌گیریم:</h2>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,4 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("<h1>سلام! اولین صفحه جنگوی من کار می‌کند 🚀</h1>")
+    context = {
+        'title': 'به جنگو خوش آمدید 🚀',
+        'message': 'این صفحه با استفاده از Template رندر شده است.',
+        'skills': ['Templates', 'Models', 'ORM', 'Admin', 'Forms'],
+    }
+    return render(request, 'pages/home.html', context)
